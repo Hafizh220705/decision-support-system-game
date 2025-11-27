@@ -7,7 +7,7 @@
 
 Sistem Pendukung Keputusan (DSS) untuk memprediksi kesuksesan video game berdasarkan analisis data historis penjualan. Aplikasi ini menggunakan Machine Learning (Random Forest & K-Means Clustering) untuk memberikan prediksi dan rekomendasi strategis.
 
-![Dashboard Preview](https://via.placeholder.com/800x400?text=DSS+Video+Games+Dashboard)
+![Dashboard Preview](image.png)
 
 ## 📋 Daftar Isi
 
