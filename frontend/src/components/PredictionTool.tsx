@@ -31,7 +31,7 @@ export default function PredictionTool({ metadata }: PredictionToolProps) {
   const [publisher, setPublisher] = useState('Electronic Arts');
   const [criticScore, setCriticScore] = useState(75);
   const [userScore, setUserScore] = useState(7.0);
-  const [year, setYear] = useState(2024);
+  const [year, setYear] = useState(2026);
 
   const handlePredict = async () => {
     setLoading(true);
@@ -193,20 +193,23 @@ export default function PredictionTool({ metadata }: PredictionToolProps) {
             {/* Year */}
             <div>
               <label className="block text-white/70 text-sm mb-2">
-                📅 Release Year: <span className="text-white font-semibold">{year}</span>
+                📅 Planned Release Year: <span className="text-white font-semibold">{year}</span>
               </label>
               <input
                 type="range"
-                min="2010"
-                max="2025"
+                min="2025"
+                max="2030"
                 value={year}
                 onChange={(e) => setYear(Number(e.target.value))}
                 className="w-full accent-green-500"
               />
               <div className="flex justify-between text-white/40 text-xs mt-1">
-                <span>2010</span>
                 <span>2025</span>
+                <span>2030</span>
               </div>
+              <p className="text-white/40 text-xs mt-2">
+                💡 Predict success for games planned to release in the future
+              </p>
             </div>
 
             {/* Predict Button */}

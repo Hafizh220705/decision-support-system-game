@@ -143,7 +143,15 @@ def predict():
         publisher = data.get('publisher')
         critic_score = float(data.get('critic_score', 75))
         user_score = float(data.get('user_score', 7.0))
-        year = int(data.get('year', 2024))
+        year = int(data.get('year', 2026))
+        
+        # Normalize year to training range (2013-2016)
+        # Map future years to the training range to maintain model compatibility
+        if year >= 2025:
+            # Map 2025-2030 to 2014-2016 (recent years in training data)
+            normalized_year = 2014 + min((year - 2025) // 2, 2)
+        else:
+            normalized_year = year
         
         # Encode categorical variables
         try:
@@ -163,7 +171,7 @@ def predict():
         
         # Create feature array
         features = np.array([[platform_enc, genre_enc, publisher_enc, 
-                            critic_score, user_score, year]])
+                            critic_score, user_score, normalized_year]])
         
         # Predict
         prediction = rf_model.predict(features)[0]

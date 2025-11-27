@@ -88,7 +88,7 @@ export default function Sidebar({ activeMenu, setActiveMenu, metadata }: Sidebar
       <div className="p-4 border-t border-white/5">
         <div className="text-center">
           <p className="text-white/30 text-xs">Video Games Analysis</p>
-          <p className="text-white/50 text-xs mt-1">UAS Project © 2024</p>
+          <p className="text-white/50 text-xs mt-1">UAS Project © 2025</p>
         </div>
       </div>
     </aside>
