@@ -7,7 +7,7 @@
 
 Sistem Pendukung Keputusan (DSS) untuk memprediksi kesuksesan video game berdasarkan analisis data historis penjualan. Aplikasi ini menggunakan Machine Learning (Random Forest & K-Means Clustering) untuk memberikan prediksi dan rekomendasi strategis.
 
-![Dashboard Preview](image.png)
+![Dashboard Preview](Dashboard.png)
 
 ## 📋 Daftar Isi
 
@@ -290,13 +290,13 @@ Dataset yang digunakan adalah **Video Games Sales** yang berisi data penjualan v
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](https://via.placeholder.com/600x300?text=Dashboard)
+![Dashboard](Dashboard.png)
 
 ### Prediction Tool
-![Prediction](https://via.placeholder.com/600x300?text=Prediction+Tool)
+![Prediction](Prediction.png)
 
 ### Analytics
-![Analytics](https://via.placeholder.com/600x300?text=Analytics)
+![Analytics](Analytics.png)
 
 ## 🔧 Troubleshooting
 
@@ -324,6 +324,8 @@ Pastikan backend sudah berjalan di port 5000 sebelum menjalankan frontend.
 ## 👥 Kontributor
 
 - **Hafizh** - Developer
+- **Raihan** - Developer
+- **Miftah** - Developer
 
 ## 📄 License
 
